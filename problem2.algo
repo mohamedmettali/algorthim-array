@@ -1,0 +1,73 @@
+// la procedure de produit scolaire
+
+PROCEDURE dot_product (VAR v1,v2 : ARRAY_OF_FLOAT,VAR ps:float)
+VAR
+    i : integer; 
+BEGIN
+ 
+ps:=0;
+FOR i FROM 0 TO v1.length-1  DO
+    ps:=ps+v1[i]*v2[i]
+END_FOR
+
+END
+
+// algorithme de calcul de n paires de vecteurs
+
+ALGORITHM vecteurs_orthogonaux
+VAR
+    T,A array_of_float;
+    i,j,m,k: integer;
+     ps : FLOAT; 
+BEGIN
+    write ("donne le nombre d'elements d'un tableau")
+   Read(m);
+    write ("donne le nombre de pairs des vecteurs")
+   Read(n);
+  i:=0; 
+  j:=0;
+  k:=0;
+
+FOR k FROM 1 TO n  DO
+       
+   FOR i FROM 0 TO m-1  DO
+       Read(Tk[i]);
+   END_FOR
+   FOR j FROM 0 TO m-1  DO
+       Read(Ak[j]);
+   END_FOR
+
+END_FOR
+
+  i:=0;
+    FOR i FROM 1 TO n  DO
+        dot_product(Ti,Ai)
+        IF (dot_product(Ti,Ai)=0) THEN
+   
+write ("les deux vecteurs sont orthogonaux")
+
+        Else
+write ("les deux vecteurs ne sont pas orthogonaux") 
+  
+        END_IF
+    END_FOR
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
